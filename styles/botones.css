@@ -1,0 +1,217 @@
+/* =============================== Botones =============================== */
+/* ====== Boton Header ====== */
+.btn-header {
+    border-bottom: 3px solid transparent;
+    font-size: 17px;
+    color: #fff;
+    padding: 9px;
+}
+
+.btn-header:hover {
+    border-color: #ffee00;
+    transition: .7s ease-in all;
+    color: #ffee00;
+}
+
+
+/* ====== Boton General ====== */
+.btn {
+    border: 3px solid transparent;
+    padding: 9px;
+}
+
+.btn:hover {
+    transition: .7s ease-in all;
+}
+
+/* =============================== Botones Iconos =============================== */
+/* ====== Facebook Boton ====== */
+.facebook {
+    content: \f09a;
+    font-family: FABrandsRegular;
+    font-size: 17px;
+    border: none;
+    color: #fff;
+    background: #1877f2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.facebook:hover {
+    background: #fff;
+    color: #1877f2;
+}
+
+.facebook span {
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+/* FB Boton General */
+.facebook-btn {
+    color: #fff;
+    background: #1877f2;
+    font-size: 20px;
+    padding: 9px;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.facebook-btn:hover {
+    background: #282828;
+    color: #1877f2;
+}
+
+.facebook-btn span {
+    margin-left: 5px;
+}
+
+/* FB Boton Footer */
+.fb-footer {
+    color: #fff;
+    border-color: #fff;
+    font-size: 17px;
+    display: inline-block;
+    padding: 9px;
+}
+
+.fb-footer:hover {
+    border-color: #1877f2;
+}
+
+/* ====== Youtube Boton ====== */
+.youtube {
+    content: \f167;
+    font-family: FABrandsRegular;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: #ff0000;
+    margin-left: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+.youtube:hover {
+    color: #ff0000;
+    background: #282828;
+}
+
+.youtube span {
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+/* YT Boton General */
+.youtube-btn {
+    color: #fff;
+    background: #ff0000;
+    font-size: 20px;
+    display: inline-block;
+    padding: 9px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.youtube-btn:hover {
+    background: #282828;
+    color: #ff0000;
+}
+
+.youtube-btn span {
+    margin-left: 5px;
+}
+
+/* YT Boton Footer */
+.yt-footer {
+    color: #fff;
+    border-color: #fff;
+    font-size: 17px;
+    display: inline-block;
+    padding: 9px;
+}
+
+.yt-footer:hover {
+    border-color: #ff0000;
+}
+
+/* ====== live Boton ====== */
+.live-btn {
+    display: flex;
+    color: #ff0000;
+    background: #fff;
+    align-items: center;
+    font-size: 17px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.live-btn:hover {
+    color: #ff0000;
+    background: rgb(221, 221, 221);
+}
+
+
+
+/* General */
+.live-btngen {
+    color: #ff0000;
+    background: #fff;
+    font-size: 20px;
+    display: flex;
+    padding: 9px;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+}
+
+.live-btngen:hover {
+    color: #ff0000;
+    background: #ccc;
+}
+
+/* Punto Boton Live */
+.point {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #E60023;
+    animation: live 2.5s 1s ease-in infinite;
+}
+
+
+/* General Punto */
+.point-gen {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #E60023;
+    animation: live 2.5s 1s ease-in infinite;
+}
+
+@keyframes live {
+    0% {
+        transform: scale(.7);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+}

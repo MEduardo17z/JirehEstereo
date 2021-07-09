@@ -1,0 +1,175 @@
+.ap_container {
+    width: 100%;
+}
+
+.player {
+    padding: 20px;
+    background: rgb(225, 140, 93);
+    background: linear-gradient(90deg, rgba(225, 140, 93, 1) 0%, rgb(255, 244, 38) 100%);
+    -webkit-box-shadow: 5px 8px 20px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 8px 20px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 8px 20px -11px rgba(0, 0, 0, 0.75);
+}
+
+.ap_controls {
+    background: transparent;
+    padding: 20px;
+    justify-content: center;
+}
+
+.ap_loop {
+    display: none;
+}
+
+.ap_controls span svg path:hover {
+    fill: #00e1ff;
+    transition: ease-in all .7s;
+}
+
+.player {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.ap_container .playpausebtn {
+    display: flex;
+    align-items: center;
+}
+
+
+.title-player {
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto -30px;
+}
+
+.text-player {
+    width: 1000%;
+}
+
+.text-player p {
+    color: #fff;
+    font-size: 35px;
+    animation: cintio 20s infinite;
+}
+
+@keyframes cintio {
+    0% {
+        margin-left: 300px;
+    }
+
+    100% {
+        margin-left: -300px;
+    }
+}
+
+
+/* Slider */
+.slider-body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+}
+
+.slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+.slider>* {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slider 12s infinite;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+}
+
+.slide p {
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+
+.slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(../include/img/slider-one.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 2s;
+    background-image: url(../include/img/silder-two.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 5s;
+    background-image: url(../include/img/slider-tres.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 8s;
+    background-image: url(../include/img/slider-cuatro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(5) {
+    left: 0%;
+    animation-delay: 11s;
+    background-image: url(../include/img/slider-cinco.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slider {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+
+    5% {
+        left: 0%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+
+    30.0001% {
+        left: -100%;
+        width: 0%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}

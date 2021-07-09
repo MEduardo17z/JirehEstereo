@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofrendar - Jireh Estereo 103.1 FM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../img/jireh-logo.ico">
+    <link rel="stylesheet" href="../styles/style-index.css">
+    <link rel="stylesheet" href="../styles/botones.css">
+    <link rel="stylesheet" href="../styles/whatsapp.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div id="carga"></div>
+        <script>
+            window.onload = function () {
+                var contenedor = document.getElementById('loader');
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+            }
+        </script>
+    </div>
+    <!-- =============================== Header =============================== -->
+
+
+    <header>
+        <div class="bg-header" style="background: rgb(23, 93, 155); height: auto;">
+            <div class="menu-logo" style="justify-content: space-between; background: none;">
+                <div class="logo-home">
+                    <a href="#">
+                        <img src="../img/jireh-logo.png" style="width:120px;" alt="Jireh 103.1 FM">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="../../htdocs/" class="btn-header" target="_blank">Inicio</a>
+                    <a href="../historia" class="btn-header" target="_blank">Misión</a>
+
+                    <a href="https://bit.ly/3vUddxj" class="btn-header facebook" target="_blank"><i
+                            class="fab fa-facebook"></i><span>1,9k</span></a>
+                    <a href="https://bit.ly/3j7pEDa" class="btn-header youtube" target="_blank"><i
+                            class="fab fa-youtube"></i> <span>0k</span></a>
+                    <a href="../live" class="btn-header live-btn" target="_blank">
+                        <div class="point"></div>
+                        En Vivo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="predica-del-dia">
+        <p class="tittle">Para sus oftrendas voluntarias</p>
+        <div class="splitter">
+
+            <div class="donacion">
+                <img src="../img/atlantida-banco.svg" style="width:300px;" alt="">
+                <p>21-701-0303-763</p>
+            </div>
+            <div class="donacion">
+                <img src="../img/bancocci_logo.png" style="width:210px;" alt="">
+                <p>1205-2005-1455</p>
+            </div>
+        </div>
+
+        <div class="splitter" style="display: block;">
+
+            <div class="donacion">
+                <span class="ciudad"> <span><i class="fas fa-map-marker-alt"></i></span> Ciudad de La Paz</span>
+                <p>Supermercado Monte de Sion, frente al parque central</p>
+            </div>
+            <div class="donacion">
+                <span class="ciudad"> <span><i class="fas fa-map-marker-alt"></i></span> Ciudad de Comayagua</span>
+                <p>Pollos Dacsa, Barrio El Centro Frente a plaza del sol</p>
+                <p>Radio Jireh Estereo, 3 Cuadras arriba del Hotel Morales frente al Hotel Suarez</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- =============================== Footer =============================== -->
+    <footer>
+        <div class="contenido-foot">
+            <div class="contactanos-footer">
+                <p><i class="fas fa-broadcast-tower"></i> Transmitiendo desde Comayagua Jireh Stereo 103.1 FM
+                </p>
+                <p><i class="fas fa-map-marker-alt"></i> Direccion: 3 Cuadras arriba del Hotel Morales, frente al Hotel
+                    Suarez, Comayagua, Honduras, CA. </p>
+                <p class="wp-numbers">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp:
+                    <a href="https://wa.me/50495562851" target="_blank">9556-2851</a><a href="https://wa.me/50488393018"
+                        target="_blank">8839-3018</a>
+                </p>
+                <p class="phones"><i class="fas fa-phone-alt"></i> Telefonos:
+                    <span>2772-7077</span><span>2772-6581</span></p>
+            </div>
+            <div class="btns-footer">
+                <a href="#" class="btn facebook fb-footer"><i class="fab fa-facebook"></i> <span>1,9k</span></a>
+                <a href="#" class="btn youtube yt-footer"><i class="fab fa-youtube"></i> <span>0k</span></a>
+            </div>
+        </div>
+        <p class="copy">© 2021 Ministerio Renovacion Comayagua, Honduras, CA.</p>
+    </footer>
+
+
+
+    <!-- =============================== Poups =============================== -->
+
+
+    <div>
+        <!-- Whatsapp Popup -->
+        <div class="wp-popup" id="wpWindow" style="display: none; ">
+
+            <!-- Header Popup -->
+            <div class="wp-header" id="cerrarBtn">
+                <span>Jireh Estereo 103.1 FM</span>
+                <strong class="cerrar">×</strong>
+            </div>
+
+            <!-- Mensaje Muestra -->
+            <div class="wp-msg">
+                <div class="mensaje">
+                    <p class="text-msg">Hola, ¿Cómo te podemos ayudar? </p>
+                </div>
+            </div>
+
+            <!-- Input Mensaje -->
+            <div class="wp-input-text">
+                <div class="wp-input-div">
+                    <input type="text" class="wp-input" id="wp-input" placeholder="Enviar Mensaje...">
+                </div>
+                <div class="wp-button">
+                    <a id="wp-button" target="_blank"><i class="material-icons icon-font-color--black">send</i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Button Whatsapp  -->
+        <button type="button" class="whatsapp-button" id="poupWp">
+            <div class="whats-buttonpop">
+                <img class="icon-whatsapp" src="https://image.flaticon.com/icons/svg/134/134937.svg">
+            </div>
+        </button>
+        <!-- Top Button -->
+        <button type="button" class="to-top-btn">
+            <i class="fas fa-angle-up"></i>
+        </button>
+    </div>
+
+    <style>
+        .tittle {
+            font-size: 50px;
+            color: #737e7b;
+        }
+
+        .splitter {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .splitter:first-of-type {
+            margin: 20px 0px;
+        }
+
+        .donacion {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .donacion p {
+            font-size: 21px;
+            margin-top: 10px;
+            color: #000;
+        }
+
+        .ciudad {
+            color: #b8c5c2;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    </style>
+
+    <script src="../js/wp-sms.js"></script>
+</body>
+
+</html>

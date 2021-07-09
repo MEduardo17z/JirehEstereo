@@ -1,0 +1,805 @@
+/* =============================== Fonts =============================== */
+
+/* ==================== Mollen ==================== */
+@font-face {
+    font-family: Mollen;
+    src: url(../fonts/Mollen/Mollen.otf);
+}
+
+@font-face {
+    font-family: MollenBold;
+    src: url(../fonts/Mollen/Mollen-Bold.otf);
+}
+
+
+/* =============================== Icon Fonts /*=============================== */
+/* ====== Iconos Solido ====== */
+@font-face {
+    font-family: FASolid;
+    src: url(../fonts/fontawesome/Solid.otf);
+}
+
+/* ====== Iconos Marcas ====== */
+@font-face {
+    font-family: FABrandsRegular;
+    src: url(../fonts/fontawesome/Brands.otf);
+}
+
+
+/* =============================== Todo =============================== */
+* {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+    font-family: 'Mollen', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ff9d2e;
+    border-radius: 3px;
+}
+
+/* Loader */
+#loader {
+    background: #ffffffee;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-transition: all ease-in .7s;
+    -moz-transition: all ease-in .7s;
+    transition: all ease-in .7s;
+    z-index: 10000;
+}
+
+#carga {
+    border: 10px solid #2e89ff;
+    border-top-color: #3e4042;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%), translateY(-50%);
+    -webkit-animation: girar .7s linear infinite;
+    -moz-animation: girar .7s linear infinite;
+    animation: girar .7s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =============================== Header General =============================== */
+.bg-header {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/slider-uno.png);
+    opacity: 95%;
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* ====== Jireh Estereo 103.1 FM ====== */
+.bg-header h1 {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: center;
+    text-shadow: 10px 10px 10px #000;
+}
+
+/* =============================== Alineamiento Logo - Menu ===============================  */
+.menu-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0) 100%);
+}
+
+/* =============================== Menu =============================== */
+.menu {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Logo */
+.logover {
+    display: flex;
+}
+
+.logover .predica-del-dia {
+    width: 45%;
+}
+
+.predica-del-dia .hd-title img {
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* =============================== Versiculo del dia =============================== */
+
+.title-versiculo {
+    color: #111;
+    font-size: 35px;
+    text-align: center;
+}
+
+.sun {
+    color: #ffee00;
+}
+
+.descripcion-ver {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.descripcion-ver span {
+    font-size: 21px;
+    display: inline-block;
+    text-align: center;
+}
+
+.cita {
+    margin-top: 10px;
+}
+
+.cita span {
+    font-size: 15px;
+    display: inherit;
+    text-align: center;
+    color: #181818;
+}
+
+/* =============================== Predica del Dia =============================== */
+.predica-del-dia {
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+    -webkit-box-shadow: 5px 8px 20px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 8px 20px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 8px 20px -11px rgba(0, 0, 0, 0.75);
+}
+
+
+.fa-bible {
+    color: sienna;
+}
+
+.predica-del-dia iframe {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.predica-del-dia h2 {
+    font-size: 40px;
+    color: #111;
+}
+
+.btns-predica {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.siguenos-pdd {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 21px;
+    color: #111;
+}
+
+
+/* Cajas */
+.cajas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* =============================== Facebook =============================== */
+.barra {
+    background: #242526;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =============================== Box FB =============================== */
+.box-fb {
+    width: 49%;
+    background: #18191a;
+    height: 550px;
+    border-radius: 3px;
+    overflow: auto;
+    position: relative;
+}
+
+.box-fb::-webkit-scrollbar {
+    width: 7px;
+}
+
+.box-fb::-webkit-scrollbar-thumb {
+    background: #2e89ff;
+}
+
+.bg-fb-box {
+    width: 100%;
+    height: 200px;
+    background: url(../img/mobile-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hd-btns-fb-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 20px;
+    margin-top: -5px;
+    background: #242526;
+}
+
+.hd-btns-fb-box a {
+    background: #2d88ff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.hd-btns-fb-box a .fab {
+    margin-right: 5px;
+}
+
+/* Username + IMG */
+.username {
+    display: flex;
+    align-items: center;
+}
+
+.username img {
+    width: 110px;
+    margin-top: -10px;
+    margin-right: 15px;
+    border: 5px solid #242526;
+    border-radius: 50%;
+}
+
+.profile-box-fb p {
+    color: #ccc;
+    text-align: left;
+}
+
+.profile-box-fb p:first-of-type {
+    font-size: 18px;
+}
+
+.profile-box-fb p:last-of-type {
+    font-size: 15px;
+}
+
+/* Linea */
+.linea-fb {
+    width: 100%;
+    background: #3e4042;
+    height: 1px;
+    margin: 0 auto;
+}
+
+/* Boton me gusta + inicio */
+.bj-hd-fb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px 0px;
+    background: #242526;
+}
+
+.bj-hd-fb a {
+    padding: 10px 20px;
+    background: rgba(45, 136, 255, 0.2);
+    color: #2d88ff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.bj-hd-fb a:hover {
+    background: rgba(45, 136, 255, 0.486);
+    transition: all ease-in .7s;
+}
+
+#likedFace {
+    padding: 10px 20px;
+    background: #ffffff1a;
+    color: #fff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+}
+
+#likedFace:hover {
+    background: #ffffff4f;
+    transition: all ease-in .7s;
+}
+
+.menu-fb-box {
+    display: flex;
+}
+
+.menu-fb-box p {
+    padding: 10px 10px 20px;
+    color: #b0b3b8;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+
+}
+
+.menu-fb-box p:hover {
+    color: #fff;
+    transition: all ease-in .7s;
+    background: #e6f1ff0c;
+}
+
+.menu-fb-box .activo-btn-fb {
+    color: #2e89ff;
+    transition: all ease-in .7s;
+    border-bottom: 3px solid #2e89ff;
+}
+
+/* Informacion */
+.informacion {
+    width: 90%;
+    background: #242526;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+/* Incio */
+.inicio {
+    width: 90%;
+    background: #242526;
+    margin: 20px auto;
+    border-radius: 6px;
+}
+
+
+.header-publicacion {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0px;
+}
+
+/* Nombre Pagina */
+.page-fb {
+    font-size: 16px;
+    margin-left: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+/* Tipo de video */
+.type-video {
+    font-size: 13px;
+    color: #b0b3b8;
+}
+
+/* Fecha */
+.date-fb-pb {
+    font-size: 13px;
+    color: #b0b3b8;
+}
+
+/* Titulo Publicacion */
+.titulo-fb-publicacion {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 20px 10px;
+    color: #fff;
+}
+
+.line-info {
+    background: #3e4042;
+    height: 1px;
+    margin: 5px auto;
+}
+
+.general-fb-box h2 {
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.general-fb-box h3 {
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.general-fb-box p {
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    margin: 5px auto;
+
+}
+
+.general-fb-box h4 {
+    text-align: left;
+    color: #fff;
+    margin: 5px auto;
+    font-size: 20px;
+}
+
+.general-fb-box p i,
+.general-fb-box h4 i {
+    color: #8c939d;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.general-fb-box span {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 0px 25px;
+    display: flex;
+    text-align: left;
+}
+
+/* Buttons like */
+.like-buttons {
+    display: flex;
+    padding: 15px 40px;
+}
+
+.like-fb-btn {
+    width: 100%;
+}
+
+.like-fb-btn a {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #b0b3b8;
+    padding: 10px;
+    width: 100%;
+}
+
+.like-fb-btn a:hover {
+    color: #fff;
+    transition: all ease-in .7s;
+    background: #ffffff1a;
+}
+
+.like-fb-btn a i {
+    margin-right: 5px;
+}
+
+/*=============================== Youtube ===============================*/
+.box-yt {
+    width: 49%;
+    background: #191919;
+    height: 550px;
+    border-radius: 3px;
+    position: relative;
+    overflow: auto;
+}
+
+.box-yt::-webkit-scrollbar {
+    width: 7px;
+}
+
+.box-yt::-webkit-scrollbar-thumb {
+    background: #ff0000;
+}
+
+/* =============== Canal =============== */
+.canal {
+    display: flex;
+    padding: 20px;
+    background: #212121;
+    align-items: center;
+}
+
+.text-canal {
+    margin-left: 15px;
+    color: #fff;
+    text-align: left;
+}
+
+.text-canal p:first-of-type {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.text-canal p:last-of-type {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.barra {
+    position: sticky;
+    top: 0;
+}
+
+/* Videos */
+.subido {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.videos {
+    padding: 15px;
+}
+
+.list-videos {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.list-videos a img {
+    width: 160px;
+    height: 100px;
+}
+
+.text-video {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.text-video p {
+    color: #f0f0ff;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.text-video a p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/* Inicio Botone */
+.inicio-btns {
+    display: flex;
+    width: 100%;
+    background: #212121;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+.inicio-btns p:hover {
+    background: #313131;
+    transition: all ease-in .7s;
+
+}
+
+.inicio-btns p {
+    padding: 10px 40px;
+    color: #fff;
+    border-bottom: 2px solid#fff;
+    cursor: pointer;
+}
+
+
+/* =============================== Testimonios =============================== */
+.testimonios {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.testimonios>div {
+    background: #00ffff1f;
+    width: 365px;
+    height: 460px;
+    padding: 30px;
+    border: .5px solid #e9e9e9;
+    -webkit-box-shadow: inset 1px 1px 35px -20px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: inset 1px 1px 35px -20px rgba(0, 0, 0, 0.66);
+    box-shadow: inset 1px 1px 35px -20px rgba(0, 0, 0, 0.66);
+}
+
+.profile-test img {
+    width: 100px;
+}
+
+
+.profile-test p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.profile-test p:last-of-type {
+    font-size: 17px;
+    text-align: center;
+    color: rgba(88, 88, 88, 0.774);
+}
+
+
+/* =============================== Ofrendar =============================== */
+.tt-hd-ofrenda {
+    background: #00a4a6;
+    color: #fff;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tt-hd-ofrenda p {
+    font-size: 2.5rem;
+}
+
+.ofrenda-btn {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px;
+    border-color: #ffff;
+}
+
+.ofrenda-btn:hover {
+    color: #000;
+    border-color: #000;
+}
+
+/* =============================== Footer =============================== */
+footer {
+    width: 100%;
+    background-color: #111;
+    border-top: 3px solid #767676;
+    text-align: center;
+}
+
+footer p {
+    color: #bac0c3;
+}
+
+.contenido-foot {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contactanos Footer */
+.contactanos-footer {
+    width: 45%;
+    padding: 20px;
+
+}
+
+.contactanos-footer p {
+    margin: 10px 0px;
+}
+
+.wp-numbers a {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.wp-numbers a:hover {
+    color: rgba(255, 255, 255, 0.616);
+    text-decoration: underline;
+    transition: all ease-in .7s;
+}
+
+.phones span {
+    margin-left: 5px;
+}
+
+/* ======== Botones Footer ======== */
+.btns-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btns-footer a:first-of-type {
+    margin-bottom: 10px;
+}
+
+/* Copyright */
+.copy {
+    padding: 20px;
+}
+
+
+/* Reproductor */
+.reproductorRadio {
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(307deg, #ffcc00, #d58357);
+    opacity: 70%;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(9px);
+}
+
+
+/* Play / Pause */
+.playPause {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    cursor: pointer;
+}
+
+.playPause img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.hd-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.linea {
+    width: 200px;
+    height: 5px;
+    background: #ffee00;
+    margin: 10px auto 30px;
+}
