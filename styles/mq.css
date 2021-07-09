@@ -80,6 +80,10 @@
 }
 
 @media (max-width: 1050px) {
+    .wp-popup {
+        width: 50%;
+    }
+
     .bg-header {
         background-image: url(../img/mobile-bg.png);
     }
@@ -205,5 +209,59 @@
 
     .profile-test p:last-of-type {
         font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wp-popup {
+        width: 90%;
+    }
+
+    .testimonios>div {
+        height: 780px;
+    }
+
+    .bg-header h1 {
+        right: auto;
+        font-size: 22px;
+    }
+
+    .btns-menu-mb {
+        width: 90%;
+    }
+
+    .predica-del-dia iframe {
+        height: 220px;
+    }
+
+    .tt-hd-ofrenda {
+        flex-direction: column;
+        padding: 4rem 1rem;
+    }
+
+    .ofrenda-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .tt-hd-ofrenda p {
+        text-align: center;
+        font-size: 1.598rem;
+    }
+
+    .contactanos-footer {
+        width: 95%;
+    }
+
+    .contenido-foot {
+        flex-direction: column;
+    }
+
+    .contenido-foot .btns-footer a {
+        padding: 10px 71px;
+    }
+
+    .player {
+        padding: 10px;
     }
 }
