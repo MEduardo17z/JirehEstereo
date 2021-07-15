@@ -74,16 +74,21 @@ body::-webkit-scrollbar-thumb {
     z-index: 10000;
 }
 
+.cont-carga {
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
 #carga {
     border: 10px solid #2e89ff;
     border-top-color: #3e4042;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%), translateY(-50%);
     -webkit-animation: girar .7s linear infinite;
     -moz-animation: girar .7s linear infinite;
     animation: girar .7s linear infinite;
@@ -217,19 +222,6 @@ body::-webkit-scrollbar-thumb {
 
 .predica-del-dia h2 {
     font-size: 40px;
-    color: #111;
-}
-
-.btns-predica {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.siguenos-pdd {
-    margin-top: 10px;
-    margin-bottom: -10px;
-    font-size: 21px;
     color: #111;
 }
 
